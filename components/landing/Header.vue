@@ -4,15 +4,7 @@
   import { useDisplay } from "vuetify"
 
   const drawer = ref(false)
-  const innerW = window.innerWidth;
-  const { mdAndUp, mdAndDown } = useDisplay()
-
-  onMounted(() => {
-    if (innerW > 950) {
-      drawer.value = false
-    }
-  })
-
+  const { mdAndUp } = useDisplay()
   const headerMenu = ref(headerItems)
 
 </script>

@@ -5,14 +5,8 @@ import Sidebar from "~/components/backendComponents/sidebar/Sidebar.vue"
 import Header from "~/components/backendComponents/header/Header.vue"
 
 const drawer = ref(undefined || true)
-const innerW = window.innerWidth;
 const { mdAndUp, mdAndDown } = useDisplay()
 
-onMounted(() => {
-  if (innerW < 950) {
-    drawer.value = !drawer.value
-  }
-})
 
 </script>
 <template>
